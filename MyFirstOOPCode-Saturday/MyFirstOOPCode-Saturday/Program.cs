@@ -10,6 +10,10 @@ namespace MyFirstOOPCode_Saturday
             {
                 //Creación del objeto de la clase date
                 var dateObject = new Date(2024, 2, 29);
+                /*Tarea para ingresar los datos por consola
+                 * Console.WriteLine("Ingresar el año");
+                 * Console.ReadLine(year);*/
+                
                 //Comando para leer
                 Console.WriteLine(dateObject.ToString());
             }
