@@ -23,8 +23,8 @@ namespace MyFirstOOPCode_Saturday
         public override string ToString()
         {
             //base significa la clase base o padre y podemos heredar todo lo que tiene
-            return $"{base.ToString()}" +
-                $"Value to pay..........{GetValueToPay()}";
+            return $"{base.ToString()} \n\t" +
+                     $"Value to pay......{GetValueToPay():C2}";
         }
 
 
