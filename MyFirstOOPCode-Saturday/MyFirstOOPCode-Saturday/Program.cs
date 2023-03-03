@@ -4,6 +4,8 @@ namespace MyFirstOOPCode_Saturday
 {
     public class Program
     {
+        private static object commissionEmployee;
+
         static void Main(string[] args)
         {
             try
@@ -21,7 +23,7 @@ namespace MyFirstOOPCode_Saturday
                 Console.WriteLine("");
                 
                 //Creación del objeto de tipo SalaryEmployee
-                Employee salaryEmployeeObject = new SalaryEmployee()
+                Employee salaryEmployee = new SalaryEmployee()
                 {
                     Id = 1036453304,
                     FirstName = "María",
@@ -31,10 +33,36 @@ namespace MyFirstOOPCode_Saturday
                     IsActive = true,
                     Salary = 1600000.56M//La M muestra decimales
                 };
-               
-                
+
                 //Definición de valores para poder mostrar
-                Console.WriteLine(salaryEmployeeObject.ToString());
+                Console.WriteLine(salaryEmployee.ToString());
+
+                Console.WriteLine("");
+                                
+                Console.WriteLine("Type your ID: ");
+                int id = Convert.ToInt32(Console.ReadLine());//Conversión de dato con Convert.ToInt32
+
+                Console.WriteLine("Type your first name: ");
+                string firstName = Console.ReadLine();
+
+                Console.WriteLine("Type your last name: ");
+                string lastName = Console.ReadLine();
+
+                Console.WriteLine("Are you active?: ");
+                bool isActive = Convert.ToBoolean (Console.ReadLine());
+
+                //Creación del objeto
+                Employee commissionEmployeeObject = new CommissionEmployee()
+                {
+                    Id = id,
+                    FirstName = firstName,
+                    LastName = lastName,
+                    BirthDate = dateObjectBirthDate,
+                    HiringDate = dateObjectHiringDate,
+                    IsActive = isActive
+                };
+
+                Console.WriteLine(commissionEmployee.ToString());
 
                 Console.WriteLine("");
 
