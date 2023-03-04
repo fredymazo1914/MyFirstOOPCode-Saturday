@@ -49,7 +49,14 @@ namespace MyFirstOOPCode_Saturday
                 string lastName = Console.ReadLine();
 
                 Console.WriteLine("Are you active?: ");
-                bool isActive = Convert.ToBoolean (Console.ReadLine());
+                bool isActive = Convert.ToBoolean(Console.ReadLine());
+
+                //Console.WriteLine("Are you active?: ");
+                //bool isActive = Convert.ToBoolean(Console.ReadLine());
+
+                //Console.WriteLine("Are you active?: ");
+                //bool isActive = Convert.ToBoolean(Console.ReadLine());
+
 
                 //Creación del objeto
                 Employee commissionEmployeeObject = new CommissionEmployee()
@@ -59,10 +66,12 @@ namespace MyFirstOOPCode_Saturday
                     LastName = lastName,
                     BirthDate = dateObjectBirthDate,
                     HiringDate = dateObjectHiringDate,
-                    IsActive = isActive
+                    IsActive = isActive,
+                    CommissionPercentage = 5,
+                    Sales = 67673
                 };
 
-                Console.WriteLine(commissionEmployee.ToString());
+                Console.WriteLine(commissionEmployeeObject);
 
                 Console.WriteLine("");
 
